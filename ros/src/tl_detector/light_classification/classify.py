@@ -7,12 +7,11 @@ TRAFFIC_LIGHTS = ['Green', 'Red', 'Yellow', 'Unknown']
 
 class TLClassifier(object):
     def __init__(self, is_site):
-        if is_site == True:
-            model = 'frozen_models/site/frozen_inference_graph.pb'
-        elif is_site == False:
+        if is_site == False:
             model = 'frozen_models/simulator/frozen_inference_graph.pb'
+        else:
+            model = 'frozen_models/site/frozen_inference_graph.pb'
         self.detection_graph = self.load_graph(model)
-
         self.image_tensor, self.detection_boxes, \
         self.detection_scores, self.detection_classes = self.extract_tensors()
         self.sess = tf.Session(graph = self.detection_graph)
@@ -95,10 +94,10 @@ class TLClassifier(object):
         return traffic_light_state
 
 
-def test(images_root = 'training_images_simulator'):
+def test(images_root = 'test_images'):
     total_images = 0
     c = TLClassifier(False)
-    print("procesing images and classifying ...")
+    print("procesing images and classifying ...",images_root)
     for fldr in glob(images_root+"/*"):
         print(fldr)
         good_classification = 0
