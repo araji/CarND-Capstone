@@ -7,11 +7,11 @@ Team Mater :  [<img src="media/mater.jpeg" width=50 align=center>](http)
 
 | Name | Udacity handle | Email |
 | --- | --- | --- |
-|Abdelaziz R.|Abdelaziz R.|abdelaziz dot raji at gmail dot com|
-|Askari Hasan | | |
-|Dae Robert | | |
-|Neranjaka J.| | |
-|Prabhakar R.(*)| | |
+|Abdelaziz R.|Abdelaziz R.|aabdelaziz.raji@gmail.com|
+|Askari Hasan | Hasan Askari|hasan_askari79@yahoo.com |
+|Dae Robert |Robert Dämbkes |robertrd@gmx.de|
+|Neranjaka J.|Neranjaka Jayarathne |neranjake@gmail.com |
+|Prabhakar Rana(*)| Prabhakar R| prabhakar.rana@gmail.com|
 | | | |
 
 (*) Team Lead
