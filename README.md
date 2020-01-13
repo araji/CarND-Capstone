@@ -10,11 +10,13 @@ Team Mater :  [<img src="media/mater.jpeg" width=50 align=center>](http)
 |Abdelaziz R.|Abdelaziz R.|aabdelaziz.raji@gmail.com|
 |Askari Hasan | Hasan Askari|hasan_askari79@yahoo.com |
 |Dae Robert |Robert Dämbkes |robertrd@gmx.de|
-|Neranjaka J.|Neranjaka Jayarathne |neranjake@gmail.com |
-|Prabhakar Rana(*)| Prabhakar R| prabhakar.rana@gmail.com|
+|Neranjaka J.(*)|Neranjaka Jayarathne |neranjake@gmail.com |
+|Prabhakar Rana| Prabhakar R| prabhakar.rana@gmail.com|
 | | | |
 
 (*) Team Lead
+
+[![Alt text]](https://img.youtube.com/vi/Xc5Ln870Vww/0.jpg)](https://www.youtube.com/watch?v=Xc5Ln870Vww)
 
 
 # System Architecture Diagram :
