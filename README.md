@@ -16,7 +16,7 @@ Team Mater :  [<img src="media/mater.jpeg" width=50 align=center>](http)
 
 (*) Team Lead
 
-[![Alt text]](https://img.youtube.com/vi/Xc5Ln870Vww/0.jpg)](https://www.youtube.com/watch?v=Xc5Ln870Vww)
+[![alt text](https://img.youtube.com/vi/Xc5Ln870Vww/0.jpg) "capstone video"](https://www.youtube.com/watch?v=Xc5Ln870Vww)
 
 
 # System Architecture Diagram :
