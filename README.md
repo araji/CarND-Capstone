@@ -11,9 +11,10 @@ Team Mater :  [<img src="media/mater.jpeg" width=50 align=center>](http)
 |Askari Hasan | | |
 |Dae Robert | | |
 |Neranjaka J.| | |
-|Prabhakar R.| | |
+|Prabhakar R.(*)| | |
 | | | |
 
+(*) Team Lead
 
 
 # System Architecture Diagram :
