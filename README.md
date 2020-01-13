@@ -16,9 +16,9 @@ Team Mater :  [<img src="media/mater.jpeg" width=50 align=center>](http)
 
 
 
-# System Arhitecture Diagram :
+# System Architecture Diagram :
 
-The following is a system architecture diagram showing the ROS nodes and topics used in the project. You can refer to the diagram throughout the project as needed. The ROS nodes and topics shown in the diagram are described briefly in the Code Structure section below, and more detail is provided for each node in later classroom concepts of this lesson.
+The following is a system architecture diagram showing the ROS nodes and topics used in the project. 
 
 
 ![alt text](media/final-project-ros-graph-v2.png "CarND - Final Project ")
@@ -100,8 +100,9 @@ Simulator :
     * Training/monitoring and exporting resulting graph:
     
         * start training :
-
-    python train.py -logtostderr --train_dir=./models/train --pipeline_config_path=config/ssd_mobilenet_sim.config
+        ```
+        python train.py -logtostderr --train_dir=./models/train --pipeline_config_path=config/ssd_mobilenet_sim.config
+        ```
 
         * start monitoring with tensorboard:
     
