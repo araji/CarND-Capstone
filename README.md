@@ -15,7 +15,7 @@ The members of team **Mater**: [<img src="media/mater.jpeg" width=50 align=cente
 
 | Name | Udacity handle | Email |
 | --- | --- | --- |
-|Abdelaziz R.|Abdelaziz R.|aabdelaziz.raji@gmail.com|
+|Abdelaziz R.|Abdelaziz R.|abdelaziz.raji@gmail.com|
 |Askari Hasan | Hasan Askari|hasan_askari79@yahoo.com |
 |Dae Robert |Robert Dämbkes |robertrd@gmx.de|
 |**Neranjaka J.(*)**|**Neranjaka Jayarathne** |**nernajaka.jayarathne@ttu.edu**|
