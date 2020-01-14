@@ -46,7 +46,7 @@ class TLDetector(object):
         self.upcoming_red_light_pub = rospy.Publisher('/traffic_waypoint', Int32, queue_size=1)
 
         self.bridge = CvBridge()
-        self.light_classifier = TLClassifier()
+        self.light_classifier = TLClassifier(self.config['is_site'])
         self.listener = tf.TransformListener()
 
         self.state = TrafficLight.UNKNOWN
@@ -83,7 +83,7 @@ class TLDetector(object):
         if self.skip_count !=0:
             # rospy.loginfo("Skipping")
             return
-        rospy.loginfo("processing image for traffic light classification")
+        # rospy.loginfo("processing image for traffic light classification")
         self.has_image = True
         self.camera_image = msg
         light_wp, state = self.process_traffic_lights()

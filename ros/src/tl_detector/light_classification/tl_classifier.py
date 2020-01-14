@@ -5,9 +5,12 @@ import cv2
 import os
 
 class TLClassifier(object):
-    def __init__(self):
+    def __init__(self, is_site):
         print(os.getcwd())
-        model = 'frozen_models/simulator/frozen_inference_graph.pb'
+        if not is_site:
+            model = 'frozen_models/simulator/frozen_inference_graph.pb'
+        else:
+            model = 'frozen_models/site/frozen_inference_graph.pb'
         self.detection_graph = self.load_graph(model)
         self.image_tensor = self.detection_graph.get_tensor_by_name('image_tensor:0')
         self.detection_boxes = self.detection_graph.get_tensor_by_name('detection_boxes:0')
@@ -65,20 +68,20 @@ class TLClassifier(object):
             boxes, scores, classes = self.filter_boxes(confidence_cutoff, boxes, scores, classes)
         if len(scores) <= 0:
             traffic_light_class_id = 4
-            print("traffic_light_state = %s", traffic_light_state)
+            # print("traffic_light_state = %s", traffic_light_state)
             return traffic_light_state
 
         # traffic light detected, return light state classification
         traffic_light_class_id = int(classes[np.argmax(scores)])
         
         if traffic_light_class_id == 1:
-            print("Traffic Light GREEN")
+            # print("Traffic Light GREEN")
             traffic_light_state = TrafficLight.GREEN
         elif traffic_light_class_id == 2:
-            print("Traffic Light RED")
+            # print("Traffic Light RED")
             traffic_light_state = TrafficLight.RED
         elif traffic_light_class_id == 3:
-            print("Traffic Light YELLOW")
+            # print("Traffic Light YELLOW")
             traffic_light_state = TrafficLight.YELLOW
 
         return traffic_light_state
