@@ -122,9 +122,15 @@ Using the udacity provided notebook but modified to load our own inference model
 ![alt text](media/mobilenet_ssd_infer3.png "CarND - Jupyter notebook tl classification")
 
 
+## Site Training
+
+ Site training followed a similar process but faster rcnn network model was selected and trained with around 350 images.
+  
+ 
 ## References used :
 * https://becominghuman.ai/traffic-light-detection-tensorflow-api-c75fdbadac62
 * https://github.com/alex-lechner/Traffic-Light-Classification
+* https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
 
 ---
 Original README:
