@@ -96,7 +96,7 @@ class WaypointUpdater(object):
         if self.stopline_wp_idx == -1 or (self.stopline_wp_idx >= farthest_idx):
             lane.waypoints = base_waypoints
         else:
-            rospy.logwarn("Stop line index %d, %d, Decelerating ..", self.stopline_wp_idx, farthest_idx)
+            rospy.loginfo_throttle(5,"Stop line index {:d}, {:d}, Decelerating ..".format(self.stopline_wp_idx, farthest_idx))
             lane.waypoints = self.decelerate_waypoints(base_waypoints, closest_idx)
         return lane
         
@@ -111,7 +111,7 @@ class WaypointUpdater(object):
             vel = math.sqrt(2 * MAX_DECEL * dist)
             if vel < 1.0:
                 vel = 0.0
-            rospy.logwarn('\tSetting Velocity to : %d', vel)
+            rospy.loginfo_throttle(5,"Setting Velocity to : {:2.2f}".format(vel))
             p.twist.twist.linear.x = min(vel, wp.twist.twist.linear.x)
             temp.append(p)
         return temp
